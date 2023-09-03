@@ -14,6 +14,9 @@ export default defineNuxtConfig({
   ],
   vuetify: {
     vuetifyOptions: {
+      display: {
+        mobileBreakpoint: 'sm',
+      },
       icons: {
         defaultSet: 'mdi',
         aliases,

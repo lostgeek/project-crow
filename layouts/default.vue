@@ -1,65 +1,56 @@
 <template>
   <v-app>
     <v-app-bar flat
+      :scroll-behavior="smAndDown ? 'hide' : 'elevate'"
       color="primary">
       <v-container class="d-flex align-center">
-        <v-avatar
-          class="me-4 "
-          color="secondary"
-          size="32"
-        ></v-avatar>
+        <v-app-bar-nav-icon class="hidden-md-and-up"></v-app-bar-nav-icon>
+        <div style="cursor: pointer" @click="$router.push('/')">Project CROW</div>
+        <v-spacer />
 
-        <v-btn
-          v-for="link in links"
-          :key="link"
-          :text="link"
-          variant="text"
-        ></v-btn>
+        <div class="hidden-sm-and-down">
+        <v-btn variant="text" :active="routeIsDecks()">
+          Decklists<v-icon>mdi-menu-down</v-icon>
+          <v-menu activator="parent">
+            <v-list color="primary">
+              <v-list-item
+                v-for="(item, index) in decklists"
+                :key="index"
+                :value="index"
+                :to="item.link">
+                <v-list-item-title>{{item.title}}</v-list-item-title>
+              </v-list-item>
+            </v-list>
+          </v-menu>
+        </v-btn>
+        <v-btn variant="text" to="/about">About</v-btn>
+        </div>
 
-        <v-spacer></v-spacer>
-        <v-icon @click="toggleDarkMode()">{{ theme.global.name == 'light' ? 'mdi-brightness-4' : 'mdi-brightness-6' }}</v-icon>
+        <v-spacer />
+          <v-btn icon @click="toggleDarkMode()">
+            <v-icon>
+              {{ theme.global.name == 'light' ? 'mdi-brightness-4' : 'mdi-brightness-6' }}
+            </v-icon>
+            <v-tooltip activator="parent" location="bottom">
+              {{ theme.global.name == 'light' ? 'Dark Mode' : 'Light Mode' }}
+            </v-tooltip>
+          </v-btn>
       </v-container>
     </v-app-bar>
 
     <v-main>
-      <v-container>
-        <v-row>
-          <v-col cols="2">
-            <v-sheet rounded="lg">
-              <v-list rounded="lg">
-                <v-list-item
-                  v-for="n in 5"
-                  :key="n"
-                  link
-                  :title="`List Item ${n}`"
-                ></v-list-item>
-
-                <v-divider class="my-2"></v-divider>
-
-                <v-list-item
-                  link
-                  title="Refresh"
-                ></v-list-item>
-              </v-list>
-            </v-sheet>
-          </v-col>
-
-          <v-col>
-            <v-sheet
-              min-height="70vh"
-              rounded="lg"
-            >
-            </v-sheet>
-          </v-col>
-        </v-row>
-      </v-container>
+        <v-container>
+            <slot />
+        </v-container>
     </v-main>
   </v-app>
 </template>
 
 <script setup>
-import { useTheme } from 'vuetify'
+import { useTheme, useDisplay } from 'vuetify'
 const theme = ref(useTheme())
+const { smAndDown } = useDisplay();
+const router = useRouter();
 
 function toggleDarkMode() {
     console.log(theme);
@@ -69,17 +60,22 @@ function toggleDarkMode() {
         theme.value.global.name = 'light';
     }
 }
+function routeIsDecks() {
+  console.log(router.currentRoute.value.fullPath.startsWith('/decks'));
+  return router.currentRoute.value.fullPath.startsWith('/decks');
+}
 </script>
 
 <script>
 export default {
-    data: () => ({
-        links: [
-            'Dashboard',
-            'Messages',
-            'Profile',
-            'Updates',
-        ],
-    })
+  data: () => ({
+    decklists: [
+      { link: '/decks/crow-1', title: 'CROW 1 - Valencia vs CtM' },
+      { link: '/decks/crow-2', title: 'CROW 2 - Hayley vs Pālanā' },
+      { link: '/decks/crow-3', title: 'CROW 3 - 3 different matchups' },
+      { link: '/decks/crow-4', title: 'CROW 4 - MaxX vs Precision Design' },
+      { link: '/decks/crow-5', title: 'CROW 5 - Arissana vs Ob' },
+    ],
+  }),
 }
 </script>
