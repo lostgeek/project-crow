@@ -7,6 +7,7 @@
 <style lang="scss">
   p {
     margin-bottom: 1rem;
+    text-align: justify;
   }
 
   .v-expansion-panels {
