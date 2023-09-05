@@ -56,6 +56,9 @@ export default defineNuxtConfig({
       useVuetifyLabs: true,
     }
   },
+  content: {
+    contentHead: false,
+  },
   css: [
     // SCSS file in the project
     "~/assets/style/main.scss",
