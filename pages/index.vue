@@ -1,3 +1,3 @@
 <template>
-    This is the introduction page!
+    <ContentDoc path="/" />
 </template>

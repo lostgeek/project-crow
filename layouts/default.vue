@@ -5,7 +5,15 @@
       color="primary">
       <v-container class="d-flex align-center">
         <v-app-bar-nav-icon class="hidden-md-and-up"></v-app-bar-nav-icon>
-        <div style="cursor: pointer" @click="$router.push('/')">Project CROW</div>
+        <div class="text-h5 d-flex flex-row" style="cursor: pointer" @click="$router.push('/')">
+          <v-img src="crow.svg" class="logo">
+            <template #sources>
+              <source srcset="crow-dark.png" />
+            </template>
+          </v-img>
+          Project CROW
+        </div>
+
         <v-spacer />
 
         <div class="hidden-sm-and-down">
@@ -39,9 +47,9 @@
     </v-app-bar>
 
     <v-main>
-        <v-container>
-            <slot />
-        </v-container>
+      <v-container>
+        <slot />
+      </v-container>
     </v-main>
   </v-app>
 </template>
@@ -53,7 +61,7 @@ const { smAndDown } = useDisplay();
 const router = useRouter();
 
 function toggleDarkMode() {
-    console.log(theme);
+    // console.log(theme);
     if(theme.value.global.name == 'light') {
         theme.value.global.name = 'dark';
     } else {
@@ -61,7 +69,7 @@ function toggleDarkMode() {
     }
 }
 function routeIsDecks() {
-  console.log(router.currentRoute.value.fullPath.startsWith('/decks'));
+  // console.log(router.currentRoute.value.fullPath.startsWith('/decks'));
   return router.currentRoute.value.fullPath.startsWith('/decks');
 }
 </script>
@@ -79,3 +87,10 @@ export default {
   }),
 }
 </script>
+
+<style lang="scss" scoped>
+.logo {
+  width: 2.5rem;
+  margin-right: 1rem;
+}
+</style>
