@@ -1,5 +1,5 @@
 <template>
-    <v-expansion-panels>
+    <v-expansion-panels color="secondary">
         <v-expansion-panel title="What's with the crow?">
             <v-expansion-panel-text>
                 <ContentDoc path="/whycrow" />
