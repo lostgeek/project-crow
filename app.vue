@@ -20,6 +20,9 @@ useSeoMeta({
 });
 
 const {data, pending, error, refresh}  = await useFetch('https://netrunnerdb.com/api/2.0/public/cards');
+if (error.value) {
+  console.log("Error while fetching NRDB: ", error.value)
+}
 const nrdbData = useState('nrdbData', () => data);
 </script>
 
