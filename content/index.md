@@ -3,12 +3,7 @@ Welcome to Project CROW, a series of mini-campaigns aiming to provide an introdu
 They consist of a number of duel decks starting at the initial card pool of System Gateway and System Update 2021, sometimes adding in a few key cards from the larger Standard card pool, and then advancing over multiple stages to finally end at top-level competitive Standard decks played at current tournaments of its time.
 Currently there are five iterations:
 ## CROW 1
-Blubb
+Reina is :Card{name="Reina Roja" text="Reina Roja"} here
 
 
 :why-crow
-
-
-Blubb
-
-Bla
