@@ -1,8 +1,11 @@
 <template>
   <v-app>
     <v-app-bar flat
+      class="elevation-2"
       :scroll-behavior="smAndDown ? 'hide' : 'elevate'"
-      color="primary">
+      color="primary"
+      image="banner-optimized.svg"
+      >
       <v-container class="d-flex align-center">
         <v-app-bar-nav-icon
           class="hidden-md-and-up"
