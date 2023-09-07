@@ -18,6 +18,9 @@ useSeoMeta({
   ogDescription: description,
   ogImage: 'crow.png',
 });
+
+const {data, pending, error, refresh}  = await useFetch('https://netrunnerdb.com/api/2.0/public/cards');
+const nrdbData = useState('nrdbData', () => data);
 </script>
 
 <style lang="scss">
