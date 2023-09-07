@@ -64,6 +64,10 @@
       <v-list
         color="primary" nav>
         <v-list-subheader>Navigation</v-list-subheader>
+        <v-list-item
+          prepend-icon="mdi-home"
+          to="/"
+          title="Main" />
         <v-list-group value="Decklists">
           <template v-slot:activator="{ props }">
             <v-list-item
@@ -82,16 +86,14 @@
         </v-list-group>
         <v-list-item
           prepend-icon="mdi-information"
-          to="/about">
-          About
-        </v-list-item>
+          to="/about"
+          title="About" />
 
         <v-list-subheader>Settings</v-list-subheader>
         <v-list-item
           :prepend-icon="theme.global.name == 'light' ? 'mdi-brightness-4' : 'mdi-brightness-6'"
-          @click="toggleDarkMode()">
-            {{ theme.global.name == 'light' ? 'Dark Mode' : 'Light Mode' }}
-        </v-list-item>
+          @click="toggleDarkMode()"
+          :title="theme.global.name == 'light' ? 'Dark Mode' : 'Light Mode'" />
       </v-list>
     </v-navigation-drawer>
 
