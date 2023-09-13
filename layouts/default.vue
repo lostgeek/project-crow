@@ -4,16 +4,16 @@
       class="elevation-2"
       :scroll-behavior="smAndDown ? 'hide' : 'elevate'"
       color="primary"
-      image="banner-optimized.svg"
+      image="/banner-optimized.svg"
       >
       <v-container class="d-flex align-center">
         <v-app-bar-nav-icon
           class="hidden-md-and-up"
           @click.stop="drawer = !drawer" />
         <div class="text-h5 d-flex flex-row" style="cursor: pointer" @click="$router.push('/')">
-          <v-img src="crow.svg" class="logo">
+          <v-img src="/crow.svg" class="logo">
             <template #sources>
-              <source srcset="crow-dark.png" />
+              <source srcset="/crow-dark.png" />
             </template>
           </v-img>
           Project CROW
