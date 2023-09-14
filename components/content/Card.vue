@@ -49,14 +49,8 @@ import { useDisplay } from 'vuetify'
 const { smAndUp } = useDisplay();
 
 const props = defineProps(['name', 'text', 'fullname']);
-const nrdbData = useState('nrdbData');
-const cards = computed(function() {
-    if(nrdbData.value) {
-        return nrdbData.value.data;
-    } else {
-        return null;
-    }
-});
+const cards = useState('cards');
+const imageUrlTemplate = useState('imageUrlTemplate');
 
 const titles = computed(function() {
     if (cards.value) {
@@ -76,8 +70,8 @@ const card = computed(function() {
 });
 
 const imageUrl = computed(function() {
-    if(nrdbData.value) {
-        return nrdbData.value.imageUrlTemplate.replace('{code}', card.value.code);
+    if(cards.value) {
+        return imageUrlTemplate.value.replace('{code}', card.value.code);
     } else {
         return "";
     }

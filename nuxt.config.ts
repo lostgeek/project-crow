@@ -5,9 +5,6 @@ import { aliases, mdi } from 'vuetify/iconsets/mdi'
 
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  app: {
-    baseURL: '/crow',
-  },
   modules: [
     '@nuxt/content',
     '@invictus.codes/nuxt-vuetify',

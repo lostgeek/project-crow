@@ -19,11 +19,28 @@ useSeoMeta({
   ogImage: 'crow.png',
 });
 
-const {data, pending, error, refresh}  = await useFetch('https://netrunnerdb.com/api/2.0/public/cards');
+
+const { data, pending, error, refresh } = await useAsyncData(
+  'nrdbCardData',
+  () => $fetch('https://netrunnerdb.com/api/2.0/public/cards')
+);
 if (error.value) {
   console.log("Error while fetching NRDB: ", error.value)
 }
-const nrdbData = useState('nrdbData', () => data);
+const cards = useState('cards', function () {
+  if(data.value) {
+    return data.value.data;
+  } else {
+    return [];
+  }
+});
+const imageUrlTemplate = useState('imageUrlTemplate', function () {
+  if(data.value) {
+    return data.value.imageUrlTemplate;
+  } else {
+    return "";
+  }
+});
 </script>
 
 <style lang="scss">
