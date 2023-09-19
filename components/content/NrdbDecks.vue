@@ -21,7 +21,6 @@
 
 <script setup>
 const props = defineProps(['nrdb_ids']);
-console.log(props.nrdb_ids);
 
 const tab = ref(null);
 </script>
