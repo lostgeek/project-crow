@@ -3,11 +3,10 @@
     <v-overlay
         activator="parent"
         location-strategy="connected"
+        :width="smAndUp ? '600' : '100%'"
         :scrim="false">
         <v-card
-            :width="smAndUp ? '50%' : '100%'"
-            :min-width="smAndUp ? 500 : '100%'"
-            max-width="100%"
+            class="w-100"
             color="secondary">
             <v-progress-circular
                 v-if="Object.keys(card).length == 0"
