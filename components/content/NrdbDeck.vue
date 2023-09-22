@@ -30,10 +30,14 @@
                     :src="cardImageUrl(decklist.cards['identity'].cards[0].card)" />
                 <v-btn
                     color="primary"
+                    prepend-icon="mdi-open-in-new"
                     text="View on NRDB"
                     :href="'https://netrunnerdb.com/en/decklist/'+nrdb_id"
                     />
-                <v-btn color="primary">
+                <v-btn 
+                    color="primary"
+                    prepend-icon="mdi-open-in-app"
+                    >
                     Export to jinteki.net
                     <v-dialog
                         v-model="jnetDialog"
