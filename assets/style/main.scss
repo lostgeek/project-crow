@@ -25,3 +25,9 @@ a {
   font-weight: 600;
   text-decoration: none;
 }
+
+blockquote {
+  border-left: rgb(var(--v-theme-primary)) .2rem solid;
+  margin-left: 2rem;
+  padding-left: .5rem;
+}

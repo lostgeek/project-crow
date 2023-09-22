@@ -1,6 +1,6 @@
 <template>
     <v-sheet
-        :width="smAndUp ? 'fit-content' : '100%'"
+        :width="smAndUp ? '400' : '100%'"
         class="float-left mr-4 mb-4"
         >
     <v-expansion-panels
