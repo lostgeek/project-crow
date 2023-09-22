@@ -124,7 +124,6 @@ function toggleDarkMode() {
     }
 }
 function routeIsDecks() {
-  // console.log(router.currentRoute.value.fullPath.startsWith('/decks'));
   return router.currentRoute.value.fullPath.startsWith('/decks');
 }
 </script>

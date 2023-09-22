@@ -64,6 +64,7 @@ export default defineNuxtConfig({
     }
   },
   content: {
+    documentDriven: true,
     contentHead: false,
   },
   css: [
