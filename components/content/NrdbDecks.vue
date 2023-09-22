@@ -16,7 +16,11 @@
             v-for="deck in nrdb_ids"
             :key="deck.id"
             :value="deck.id">
-            <NrdbDeck :nrdb_id="deck.id" />
+            <NrdbDeck :nrdb_id="deck.id">
+                <template #description>
+                    <slot :name="deck.id" />
+                </template>
+            </NrdbDeck>
         </v-window-item>
     </v-window>
 

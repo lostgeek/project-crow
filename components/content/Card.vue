@@ -28,11 +28,10 @@
                         {{card.text}}
                     </v-card-text>
                 </v-col>
-                <v-col class="pa-0 ma-0 align-center">
-                    <v-img
-                        class="rounded-lg h-100"
-                        max-height="300"
-                        height="300"
+                <v-col class="pa-0 ma-0 align-center d-flex justify-center">
+                    <img
+                        class="rounded-lg"
+                        :width="smAndUp ? 200 : 150"
                         :src="imageUrl" />
                 </v-col>
             </v-row>

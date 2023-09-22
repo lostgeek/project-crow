@@ -6,8 +6,8 @@
         <v-card-subtitle class="text-subtitle-1 ml-4">
             <Card class="identityTitle" :name="decklist.cards['identity'].cards[0].card.title" />
         </v-card-subtitle>
-        <v-card-text class="deckContent">
-            <ul class="types flex-grow-1 flex-shrink-0 mx-4">
+        <v-card-text class="decklistText">
+            <ul class="types flex-grow-1 flex-shrink-0">
                 <template v-for="type in card_types">
                     <li class="type" v-if="decklist.cards[type]">
                         <span class="d-flex align-baseline mb-1">
@@ -54,6 +54,9 @@
                         </v-card>
                     </v-dialog>
                 </v-btn>
+            </div>
+            <div class="text-body-1">
+                <slot name="description" />
             </div>
         </v-card-text>
     </v-card>
@@ -201,8 +204,10 @@ li {
     list-style-type: none;
 }
 .types {
+    margin-left: 1rem;
+    margin-bottom: 0;
     column-count: 2;
-    column-gap: 2rem;
+    column-gap: 1rem;
 
     & .typeText {
         color: rgb(var(--v-theme-primary));
@@ -225,12 +230,13 @@ li {
 .identityTitle {
     color: rgb(var(--v-theme-on-secondarybg));
 }
-.deckContent {
+
+.decklistText {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 1rem
+    justify-content: center;
+    gap: 1rem;
 }
 
 .buttons {
