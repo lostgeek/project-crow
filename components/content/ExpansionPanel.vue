@@ -1,7 +1,7 @@
 <template>
     <v-expansion-panels 
         :class="mdAndUp ? 'w-75' : 'w-100'"
-        color="secondary">
+        color="primary">
         <v-expansion-panel :title="props.title">
             <v-expansion-panel-text>
                 <ContentSlot :use="$slots.default" unwrap="p" />
