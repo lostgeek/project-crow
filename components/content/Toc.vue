@@ -1,8 +1,9 @@
 <template>
     <v-sheet
         :width="smAndUp ? 'fit-content' : '100%'"
+        class="float-left mr-4 mb-4"
         >
-    <v-expansion-panels 
+    <v-expansion-panels
         color="primary">
         <v-expansion-panel title="Table of contents">
             <v-expansion-panel-text>
