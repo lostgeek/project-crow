@@ -9,6 +9,13 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@invictus.codes/nuxt-vuetify',
     '@vueuse/nuxt',
+    ['@nuxtjs/google-fonts', {
+      families: {
+        'Josefin+Sans': true,
+        Lato: true,
+      },
+      preload: true,
+    }],
   ],
   vuetify: {
     vuetifyOptions: {
