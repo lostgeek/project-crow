@@ -179,7 +179,6 @@ const icon = {
 const imageUrlTemplate = useState('imageUrlTemplate');
 
 function cardImageUrl(card) {
-    console.log(card)
     return imageUrlTemplate.value.replace('{code}', card.code);
 }
 
@@ -194,7 +193,6 @@ function jnetDecklist(decklist) {
             });
         }
     });
-    console.log(lines);
     return lines.join('\n');
 }
 </script>

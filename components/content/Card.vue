@@ -1,6 +1,5 @@
 <template>
-    <a class="nrdbCard">{{linkText()}}
-    <v-overlay
+    <a class="nrdbCard">{{linkText()}}<v-overlay
         activator="parent"
         location-strategy="connected"
         :width="smAndUp ? '600' : '100%'"
