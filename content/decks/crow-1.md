@@ -60,8 +60,68 @@ Besides these defensive options, they also have :Card{name="Calibration Testing"
 ---
 
 #C2
-Hello
+You will have to balance the ice you install on centrals. On HQ and R&D, try having :Card{name="Enigma"} or :Card{name="Hunter"} as the outermost piece of ice, since they can bounce off of them otherwise (run at the server and let the end the run subroutine fire) to get a :Card{name="The Turning Wheel"} token. Sometimes it is better to not install or rez ice and try to make more money than the Runner instead to threaten the HHN and make them not run instead.
+
+Your general game plan will be installing and advancing things behind Data Ravens, which might be :Card{name="Quantum Predictive Model"} or some other Agenda. Running through the Raven costs the Runner a lot of money, so you can be brave and try scoring a :Card{name="Priority Requisition"} masked as a QPM.
 
 #R2
-World
+Your general game plan hasn't changed, but your tools have. As said previously, you have access to :Card{name="Rebirth"} into :Card{name="Omar Keung"}, to pressure centrals very effectively. Also you can punish the Corp for installing simple End the Run ice on R&D and HQ and farm :Card{name="The Turning Wheel"} tokens by bouncing off of the ice (making a run and letting the subroutine fire / choosing to end the run on Data Raven). Using all of your 4 clicks to farm tokens can be the correct choice in many situations.
+
+Other than this, your deck hasn't changed, but the Corp deck has changed very much. You will have to focus on trashing their :Card{name="Team Sponsorship"} and :Card{name="Calibration Testing"} to keep them from getting out of control and do so while trying to not get hit by HHN.
+
+Regarding them installing :Card{name="Quantum Predictive Model"} behind :Card{name="Data Raven"} and maybe even double advancing them, you will have to find a middle ground between making them score those and checking for 3-point agendas.
+::
+
+# Stage 3
+We're now reaching the current meta. Thees decks would stand a pretty good chance in the current competitive meta, even if some card choices would seem a bit odd.
+
+On the Corp side we've now finally switched over to our destination ID: :Card{name="NBN: Controlling the Message"}. The ID itself is directly helping to protect assets. Together with it goes :Card{name="Mumbad Virtual Tour"} (MVT in short), which forces the Runner to trash it, if able. If they're not able, they're typically in range of HHN anyways, which makes this a great card. This is used to protect assets further, which allows to play the more fragile econ Asset: :Card{name="Commercial Bankers Group"}. This asset cannot be protected by ice and has a meager trash cost of 2. But on a MVT it is a great threat that will spin Corp economy out of control very fast.
+
+Furthermore they now have access to :Card{name="Global Food Initiative"}, which is a 5/3 agenda, that only gives 2 points to the Runner. This is great to not lose games as quickly, when trying to swap a QPM for a 3-pointer with :Card{name="Exchange of Information"}.
+
+On the Runner side we have some more tools in our arsenal to deal with this Corp threat as well. One key card is :Card{name="Mining Accident"}, which can be devastating. The Runner already starts the game with one bad publicity. If they get a second or third one, the game can be over pretty quickly for the Corp, who can lose their entire board state to a rampantly trashing Runner.
+
+Secondly we're adding some normal programs back to the deck. One is :Card{name="D4v1d"}, which in this matchup only targets :Card{name="Tollbooth"}, but allows you to get through that one very cheaply. The other and more important one is :Card{name="Aumakua"}, which is a virus AI breaker that gets stronger whenever you access a card. And since there are a lot of un-iced cards to be accessed, a single Aumakua can often solve all your ice problems.
+
+To combat this, the Corp includes :Card{name="IP Block"}, which normally is a rather porous piece of ice. The Runner can just beat the trace\[3\] and get through unharmed and even without needing their barrier breaker. But if they have an AI breaker installed, this tags them, which in turn activates the End the Run subroutine.
+
+::NrdbDecks
+---
+:nrdb_ids: level3
+---
+
+#C3
+The key card in this iteration is :Card{name="Commercial Bankers Group"} together with :Card{name="Mumbad Virtual Tour"}. It is your central econ engine and games will be decided by whether you can keep them on the board or not.
+
+Be aware that installing an unprotected CBG can be very dangerous and should typically only be done, if you have multiple of them in HQ.
+
+#R3
+Dealing with the :Card{name="Mumbad Virtual Tour"} + :Card{name="Commercial Bankers Group"} combination can be tricky. If they install two cards in one server on turn 1, one way of checking it is using :Card{name="Dirty Laundry"}. Since you're paying 2 to play the event, you're dipping below 5c (even taking bad publicity into account) and can not trash the MVT anymore. If you find a CBG on it, you still have 2c to trash it and just take the tag from the Corp trace. Afterwards you can still play Sure Gamble to get back up in credits and remove the tag.
+
+You have some cards that are special tech against this matchup. :Card{name="Turntable"} helps you undo the Corp swapping agendas with :Card{name="Exchange of Information"}. And :Card{name="No One Home"} makes it so that the Corp needs a significant money lead to land HHN.
+
+But the most interesting card here is :Card{name="Mining Accident"}. It can be either an ok way of making the Corp poorer or a great way of punishing a Corp for being poor. Even a single additional bad publicity can help you take apart their board state very much.
+::
+
+# Stage 4
+We're finally there. This is the matchup of the :Card{name="NBN: Controlling the Message"} deck that won [Worlds 2018](https://netrunnerdb.com/en/decklist/52512/america-ctm-worlds-2018-1st-place-) against a slightly modified version of a Valencia that won the [Taunton Regional 2019](https://netrunnerdb.com/en/decklist/56195/fredpi-val-1st-at-taunton-regional-15-person-event-).
+
+CtM got its final pieces of the toolkit with :Card{name="Resistor"}, a good piece of ICE that punishes the Runner for going tag-me. :Card{name="Market Forces"}, which is a tempo-positive form of :Card{name="Closed Accounts"} and most importantly :Card{name="15 Minutes"} and :Card{name="AR-Enhanced Security"} (ARES in short). The first is often used to close out the game or fire :Card{name="Team Sponsorship"}. The second is the vital part of this deck.
+
+We've swapped the 3 QPM style of CtM against a 3 ARES style. This means the Corp wants to score one of those very early on and roll from there.
+
+The Runner deck got its final important parts as well. :Card{name="Hacktivist Meeting"} is a great current that can slow the Corp down to a standstill. As an additional cost, every time the Corp rezzes a non-ice card, they need to trash a card randomly out of HQ. Beware when playing in meatspace though: The Runner gets to do the randomization, but only points on the card to be trashed. They do not get to see what they hit. This can (and has) lead to a lot of game losses in tournaments.
+
+The second card is :Card{name="Falsified Credentials"}, which is great to check Corp remotes, gain money and get :Card{name="Aumakua"} tokens all at the same time.
+
+Congratulations! You've reached the current meta for this specific matchup. I hope this was an interesting journey and has shown you some of the ins and outs of this matchup. There's a lot more to learn and I'm sure a lot of experienced players would love to play this matchup with you. Feel free to join the #beginners channel on Stimslack and/or DM me under @lostgeek.
+
+::NrdbDecks
+---
+:nrdb_ids: level4
+---
+
+#R4
+## Erratum
+The two :Card{name="Corroders"} should be :Card{name="Paperclips"} instead. Unfortunately I cannot edit the decks at this point, so please keep this in mind when building / importing to jinteki.net
 ::

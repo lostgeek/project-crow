@@ -108,7 +108,13 @@ function parseDecklist(list) {
     return groupBy(list, function (c) {
         var type = c.card.type_code;
         if (type === 'ice') {
-            var subtypes = c.card.keywords.split(' - ');
+            var subtypes;
+            if(c.card.keywords) {
+                subtypes = c.card.keywords.split(' - ');
+            } else {
+                console.log("Error", c.card);
+                subtypes = [];
+            }
             var matches = ['Barrier', 'Code Gate', 'Sentry'].filter(v => subtypes.includes(v));
             if(matches.length == 1) {
                 return matches[0].toLowerCase();
@@ -118,8 +124,13 @@ function parseDecklist(list) {
                 return "other";
             }
         } else if (type === 'program') {
-            var subtypes = c.card.keywords.split(' - ');
-            if(subtypes[0] === 'Icebreaker') {
+            if(c.card.keywords) {
+                subtypes = c.card.keywords.split(' - ');
+            } else {
+                console.log("Error2", c.card);
+                subtypes = [];
+            }
+            if(subtypes.length > 0 && subtypes[0] === 'Icebreaker') {
                 return "icebreaker";
             } else {
                 return "program";
