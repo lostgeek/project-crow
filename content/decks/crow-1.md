@@ -5,15 +5,14 @@ level3: [{"id": "C3", "nrdb_id": "77caa2a2-8a11-4bf6-8356-c33165c39a61", "title"
 level4: [{"id": "C4", "nrdb_id": "7f01874f-ade2-47ec-aed8-3ca75b45fb40", "title": "Corp"},{"id": "R4", "nrdb_id": "7ffcaea5-85f5-4aa3-9103-7b9dc4655768", "title": "Runner"}]
 ---
 
-:Toc{}
-
 # CROW 1: Valencia vs. NBN: Controlling the Message
 
+:Toc{}
 This is the first edition of Project CROW and came out in August 2019. It is made for beginners familiar with System Core 2019. 
 The campaign starts off with a match of :Card{name="Reina Roja"} vs. :Card{name="NBN: Making News"} and progresses in 4 Steps to the classic :Card{name="Valencia Estevez"} vs. :Card{name="NBN: Controlling the Message"} matchup and introduces and discusses the use of new cards step by step.
 The final decks are the winning Corporation of [Worlds 2018](https://netrunnerdb.com/en/decklist/52512/america-ctm-worlds-2018-1st-place-) and an adjusted version of the winning Runner deck of the [Taunton Regional 2019](https://netrunnerdb.com/en/decklist/56195/fredpi-val-1st-at-taunton-regional-15-person-event-).
 
-# Stage 1
+## Stage 1
 
 Coming out of the SC19 meta, one of the central cards that is introduced in this step is :Card{name="Hard-Hitting News"} (HHN in short). This is the central card in the matchup and what the whole game will revolve around.
 
@@ -47,7 +46,7 @@ There might come a point, where you have to make an essential run (e.g., because
 And one final thing: You can use :Card{name="Stimhack" text="Stimhacks"} liberally. This Corp deck is designed to lead up to the Controlling the Message matchup, which does typically not run any damage cards, so you can assume that there are no :Card{name="Snare!"} or similar damage cards in the Corp deck.
 ::
 
-# Stage 2
+## Stage 2
 Several things have changed in this second part of the mini-series towards the Val vs CtM matchup. For one the Runner ID! You're now playing :Card{name="Valencia Estevez"}, which which has one up- and one downside to it.. Downside: She has a 50 card limit and no link, which makes the Runner more vulnerable to HHN and other traces. But you get something more valuable for it. One bad publicity at the start of the game. This works great to mitigate the less than optimal breakers and helps trashing the Corps assets easier.
 
 A key card in the Runner deck is :Card{name="Rebirth"}: This gives the Runner the option to change their ID into any other Anarch ID and while this sounds like a great variety of options, there's one target, that is picked more than 95% of the time: :Card{name="Omar Keung"}. I would recommend playing :Card{name="Rebirth"} in this deck for now as if it said "change your ID into Omar". The second part of this combination is :Card{name="The Turning Wheel"}, which replaces the mutli-access cards in the previous deck.
@@ -74,7 +73,7 @@ Other than this, your deck hasn't changed, but the Corp deck has changed very mu
 Regarding them installing :Card{name="Quantum Predictive Model"} behind :Card{name="Data Raven"} and maybe even double advancing them, you will have to find a middle ground between making them score those and checking for 3-point agendas.
 ::
 
-# Stage 3
+## Stage 3
 We're now reaching the current meta. Thees decks would stand a pretty good chance in the current competitive meta, even if some card choices would seem a bit odd.
 
 On the Corp side we've now finally switched over to our destination ID: :Card{name="NBN: Controlling the Message"}. The ID itself is directly helping to protect assets. Together with it goes :Card{name="Mumbad Virtual Tour"} (MVT in short), which forces the Runner to trash it, if able. If they're not able, they're typically in range of HHN anyways, which makes this a great card. This is used to protect assets further, which allows to play the more fragile econ Asset: :Card{name="Commercial Bankers Group"}. This asset cannot be protected by ice and has a meager trash cost of 2. But on a MVT it is a great threat that will spin Corp economy out of control very fast.
@@ -105,7 +104,7 @@ You have some cards that are special tech against this matchup. :Card{name="Turn
 But the most interesting card here is :Card{name="Mining Accident"}. It can be either an ok way of making the Corp poorer or a great way of punishing a Corp for being poor. Even a single additional bad publicity can help you take apart their board state very much.
 ::
 
-# Stage 4
+## Stage 4
 We're finally there. This is the matchup of the :Card{name="NBN: Controlling the Message"} deck that won [Worlds 2018](https://netrunnerdb.com/en/decklist/52512/america-ctm-worlds-2018-1st-place-) against a slightly modified version of a Valencia that won the [Taunton Regional 2019](https://netrunnerdb.com/en/decklist/56195/fredpi-val-1st-at-taunton-regional-15-person-event-).
 
 CtM got its final pieces of the toolkit with :Card{name="Resistor"}, a good piece of ICE that punishes the Runner for going tag-me. :Card{name="Market Forces"}, which is a tempo-positive form of :Card{name="Closed Accounts"} and most importantly :Card{name="15 Minutes"} and :Card{name="AR-Enhanced Security"} (ARES in short). The first is often used to close out the game or fire :Card{name="Team Sponsorship"}. The second is the vital part of this deck.
