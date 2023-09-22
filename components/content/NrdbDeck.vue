@@ -1,16 +1,19 @@
 <template>
-    <v-card class="w-100" v-if="decklist">
+    <v-card color="secondarybg" v-if="decklist">
         <v-card-title>
-            <a class="deckTitle" :href="'https://netrunnerdb.com/en/decklist/'+nrdb_id">{{decklist.title}}</a>
+            {{decklist.title}}
         </v-card-title>
-        <v-card-text>
-            <ul class="types">
+        <v-card-subtitle class="text-subtitle-1 ml-4">
+            <Card class="identityTitle" :name="decklist.cards['identity'].cards[0].card.title" />
+        </v-card-subtitle>
+        <v-card-text class="deckContent">
+            <ul class="types flex-grow-1 flex-shrink-0 mx-4">
                 <template v-for="type in card_types">
                     <li class="type" v-if="decklist.cards[type]">
                         <span class="d-flex align-baseline mb-1">
                             <v-icon color="primary" class="mr-2" :icon="icon[type]" />
-                            <span class="text-capitalize font-weight-bold type-text">{{type}}</span>
-                            <span class="ml-1 font-weight-light type-count">({{decklist.cards[type].count}})</span>
+                            <span class="text-capitalize font-weight-bold typeText">{{type}}</span>
+                            <span class="ml-1 font-weight-light typeCount">({{decklist.cards[type].count}})</span>
                             </span>
                         <ul class="cards">
                             <li v-for="entry in decklist.cards[type].cards">
@@ -20,6 +23,38 @@
                     </li>
                 </template>
             </ul>
+            <div class="buttons flex-shrink-1 pa-0">
+                <img
+                    class="rounded-lg align-self-center"
+                    width="150"
+                    :src="cardImageUrl(decklist.cards['identity'].cards[0].card)" />
+                <v-btn
+                    color="primary"
+                    text="View on NRDB"
+                    :href="'https://netrunnerdb.com/en/decklist/'+nrdb_id"
+                    />
+                <v-btn color="primary">
+                    Export to jinteki.net
+                    <v-dialog
+                        v-model="jnetDialog"
+                        activator="parent"
+                        width="auto">
+                        <v-card>
+                            <v-card-title>Export deck</v-card-title>
+                            <v-card-text>
+                                Copy and paste this into jinteki.net
+                                <v-textarea
+                                    class="jnetDecklist mt-4"
+                                    name="jnetDecklist"
+                                    variant="filled"
+                                    rows="20"
+                                    :model-value="jnetDecklist(decklist)"
+                                />
+                            </v-card-text>
+                        </v-card>
+                    </v-dialog>
+                </v-btn>
+            </div>
         </v-card-text>
     </v-card>
     <v-card class="w-100" v-if="!decklist">
@@ -137,25 +172,43 @@ const icon = {
     icebreaker: 'mdi-memory',
     program: 'mdi-memory',
 }
+
+const imageUrlTemplate = useState('imageUrlTemplate');
+
+function cardImageUrl(card) {
+    console.log(card)
+    return imageUrlTemplate.value.replace('{code}', card.code);
+}
+
+const jnetDialog = ref(false);
+
+function jnetDecklist(decklist) {
+    var lines = [];
+    card_types.value.forEach( (type) => {
+        if(decklist.cards[type]) {
+            decklist.cards[type].cards.forEach( (entry) => {
+                lines.push(entry.amount + ' ' + entry.card.stripped_title);
+            });
+        }
+    });
+    console.log(lines);
+    return lines.join('\n');
+}
 </script>
 
 <style lang="scss" scoped>
 li {
     list-style-type: none;
 }
-.deckTitle {
-    color: rgb(var(--v-theme-primary-on-text));
-}
-
 .types {
-    margin-left:0;
     column-count: 2;
+    column-gap: 2rem;
 
-    & .type-text {
+    & .typeText {
         color: rgb(var(--v-theme-primary));
         font-size:120%;
     }
-    & .type-count {
+    & .typeCount {
         font-size: 90%;
     }
 
@@ -169,5 +222,26 @@ li {
         break-inside: avoid;
     }
 }
+.identityTitle {
+    color: rgb(var(--v-theme-on-secondarybg));
+}
+.deckContent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem
+}
 
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+</style>
+
+<style lang="scss">
+.jnetDecklist textarea {
+    font-size: 80%!important;
+}
 </style>

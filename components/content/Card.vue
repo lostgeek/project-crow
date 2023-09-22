@@ -91,7 +91,7 @@ function linkText() {
 
 <style lang="scss">
 .nrdbCard {
-    color: rgb(var(--v-theme-secondary));
+    color: rgb(var(--v-theme-secondarytext));
     cursor: pointer;
 }
 </style>

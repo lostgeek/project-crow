@@ -1,6 +1,5 @@
 <template>
     <v-tabs
-        :class="smAndUp ? 'w-75' : 'w-100'"
         v-model="tab"
         color="primary"
         align-tabs="left"
@@ -10,7 +9,7 @@
         </v-tab>
     </v-tabs>
     <v-window 
-        :class="smAndUp ? 'w-75' : 'w-100'"
+        class="deckTab"
         v-model="tab">
         <v-window-item
             color="primary"
@@ -31,3 +30,9 @@ const props = defineProps(['nrdb_ids']);
 
 const tab = ref(null);
 </script>
+
+<style lang="scss" scoped>
+.deckTab {
+    width: fit-content;
+}
+</style>
