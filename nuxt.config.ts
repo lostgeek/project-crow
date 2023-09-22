@@ -39,7 +39,7 @@ export default defineNuxtConfig({
               primary: colors.amber.lighten1,
               secondary: colors.blueGrey.lighten1,
               link: colors.amber.darken2,
-              background: '#161e21',
+              background: '#212121',
             },
           },
         },

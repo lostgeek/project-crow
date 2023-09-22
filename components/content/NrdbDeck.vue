@@ -1,8 +1,5 @@
 <template>
-    <v-card
-        :class="smAndUp ? 'w-50' : 'w-100'"
-        :min-width="smAndUp ? '600' : '100%'"
-        v-if="decklist">
+    <v-card class="w-100" v-if="decklist">
         <v-card-title>
             <a class="deckTitle" :href="'https://netrunnerdb.com/en/decklist/'+nrdb_id">{{decklist.title}}</a>
         </v-card-title>
@@ -25,7 +22,7 @@
             </ul>
         </v-card-text>
     </v-card>
-    <v-card class="w-50" v-if="!decklist">
+    <v-card class="w-100" v-if="!decklist">
         <v-progress-circular
             class="mx-auto"
             color="primary"
@@ -35,9 +32,6 @@
 </template>
 
 <script setup>
-import { useDisplay } from 'vuetify'
-
-const { smAndUp } = useDisplay();
 const props = defineProps(['nrdb_id']);
 const cards = useState('cards');
 
