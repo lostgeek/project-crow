@@ -11,7 +11,8 @@ crim: [{"id": "R1", "nrdb_id": "f39c37ae-78bc-460a-9ba2-758a51b5fa2e", "title": 
 :Toc{}
 For the third iteration of Project CROW released in March 2020, I was particularly ambitious and have done three separate decks for each side. While these were designed mainly for their respective matchups, they can be played in any combination.
 
-## Jinteki: Replicating Perfection
+## Corporations
+### Jinteki: Replicating Perfection
 ::NrdbDecks
 ---
 :nrdb_ids: jinteki
@@ -57,61 +58,8 @@ This allows you to do any one of the following tricks:
   * Keep R&D safe by being able to put Snare! on there whenever you want.
 ::
 
-## Hayley Kaplan: Universal Scholar
-::NrdbDecks
----
-:nrdb_ids: shaper
----
-#R1
-This deck is the first step into the archetypical Shaper deck in the current meta.
-It uses :Card{name="Aesop's Pawnshop"} as the central econ engine piece and installs a lot of cards that are meant to stay on the board temporarily.
-In this first iteration, those temporary value-giving pieces are :Card{name="Harbinger"} and :Card{name="Rezeki"}.
-Contrary to the common misconception, Rezeki is not meant to actually stick on the board until the end of time.
-It is much more valuable as a piece in Aesop's decks, where you play multiple copies, install them early, get a 5-7 turns of value out of them, and then just sell it off to Aesop's once you actually need the memory for your other stuff.
-In the average case of 6 turns of drip economy, you got 4<span class="icon icon-credit"></span> of value and then even more out of Aesop's.
-This is at least as good as a Sure Gamble, and you'd certainly play three more of those, if you were allowed to.
 
-More nifty interactions exist with :Card{name="Harbinger"} and :Card{name="Daily Casts"}.
-Harbinger can be sold to Aesop's twice, since the first sell will not trash it, but actually turn it face down to be sold again in a future turn.
-Daily Casts can also be sold, if you sequence your start of turn triggers correctly. Let's say you start the turn with 4<span class="icon icon-credit"></span> on Daily Casts.
-You first trigger Daily Casts to get the 2<span class="icon icon-credit"></span>. Then you trigger Aesop's to sell the Daily Casts and gain a further 3<span class="icon icon-credit"></span>.
-
-Otherwise, this deck is relatively straight forward.
-Try to mulligan for Professional Contacts.
-Once you find it, install it and keep clicking on it on every instance.
-This will generate a steady flow of credits and cards that then can be sold for more credits.
-#R2
-With level 2, we introduce a new Shaper ID: :Card{name="Hayley Kaplan"}, the bread and butter of competitive Shaper play.
-While other Shaper IDs might have :Card{name="Rielle" text="fun"} :Card{name="Jesminder" text="little"} :Card{name="Akiko Nisei" text="quirks"}, Hayley provides powerful click compression for doing the things you already want to do anyways: Get your board set up.
-
-To help you doing this even more quickly, we also gain another fun tool in our arsenal: :Card{name="Simulchip"}.
-In conjunction with :Card{name="Self-modifying Code"}, this allows you to very quickly set up all of your breakers at once, e.g., on a :Card{name="Stimhack"} run.
-Because of this added utility, we also change our sentry breaker to :Card{name="Ika"}.
-Once hosted on a sentry, this little breaker is very efficient, costed at 0<span class="icon icon-credit"></span> and with cheap abilities.
-Be careful though, as the Corp might overinstall their sentry to get rid of your squid friend.
-You should immediately use Simulchip here to get it back quickly.
-
-Finally, we now have a single copy of a silver bullet against fast advance decks: :Card{name="Clot"}.
-This little program can be used to stop the Corp from winning the game right under your nose.
-Use it together with a combination of :Card{name="Self-modifying Code"}, :Card{name="Simulchip"} and your :Card{name="Hayley Kaplan" text="ID ability"} to get it out at instant speed from stack, heap, or grip respectively, once the Corp has installed and advanced an agenda on the board.
-#R3
-We're finally there: This is `@Heinzel`'s "boring" Hayley deck that placed third at German Nats.
-The main body of the list does not change much, it just gets a lot more tools geared towards efficiency.
-
-Let's start with the resources, where we now include the :Card{name="Artist Colony"} + :Card{name="Fan Site"} engine, which allows you to fetch whatever card you're missing at instant speed.
-And if you don't actually need those Fan Sites, you can also just sell them off to :Card{name="Aesop's Pawnshop"}.
-
-Your scoring plan has changed quite a bit.
-Gone are the :Card{name="R&D Interface"}, which were replaced by :Card{name="Stargate"}, a powerful R&D pressuring tool released in Downfall.
-Once you're set up, you can use Stargate to dig for agendas and/or keep trashing ICE to keep R&D open for longer.
-And once you find an agenda, you now have :Card{name="Freedom Through Equality" fullname=true} to cash in an additional point if needed, when you grab it from archives.
-
-As a tool against the grindier matchups (like :Card{name="Jinteki: Personal Evolution"}, which I did not include in this series), you have got :Card{name="Buffer Drive"}.
-And finally you now have got :Card{name="Misdirection"}, which helps a lot against :Card{name="Hard-Hitting News"}.
-Once it is on the table, the maths around HHN change a lot to your favor.
-::
-
-## Argus Security: Protection Guaranteed
+### Argus Security: Protection Guaranteed
 ::NrdbDecks
 ---
 :nrdb_ids: weyland
@@ -159,65 +107,7 @@ It's rare that you install more than 2-3 pieces of ice on a single server, so do
 The Agenda suite changed only a small bit replacing the :Card{name="Oaktown Renovation"} by :Card{name="Armed Intimidation"}, which in combination with :Card{name="High-Profile Target"} can outright kill a careless runner on three cards in their grip, if you install and double advance it on the previous turn.
 ::
 
-## Hoshiko Shiro: Untold Protagonist
-::NrdbDecks
----
-:nrdb_ids: anarch
----
-#R1
-This is the first step towards the archetypical ice destruction deck.
-You are probably already familiar with the basic framework of breakers from the System Core 2019 setting.
-Additionally, you're getting :Card{name="Chisel"} and :Card{name="Devil Charm"}, which in combination allow you to blow up ice on approach, so you don't even need to encounter and break it at all.
-You need to balance preemptively installing Chisel as a pseudo bypass with running into ice with your face and making them pay the rez cost, just for you to then install Chisel on it and blow it up on your next approach.
-To have more flexible access to your Chisels, you have :Card{name="Simulchip"}, which allows you to fetch a Chisel at instant speed.
-You can actually do this in reaction to the corp rezzing a piece of ice.
-
-The other addition to the card pool are :Card{name="Paladin Poemu"} and :Card{name="Keiko"}, which are from the group of companions introduced in NISEIs Ashes cycle.
-While Keiko gives you the memory needed for installing your Chisels and :Card{name="Datasucker" text="Datasuckers"}, it also provides additional value together with Poemu to install all of your other things.
-
-#R2
-We're furthering our plan of getting rid of every piece of ice we can find with a lot of new cards.
-Let's start with our ID: :Card{name="Hoshiko Shiro"}.
-This is one of NISEIs new flip IDs with two sides.
-You start on the sad side and flip your ID, once you accessed a card in your turn.
-The other side will draw you a card in exchange for a credit (good thing you got two for flipping it), as long as you keep accessing cards in your turns.
-The best course of action often is to keep flipping your ID every turn, so that you get the maximum value out of both sides of your ID.
-Also keep in mind that the reverse side of your ID not only has different text, but also 1 link and the subtype **digital**, the former being important against cards like :Card{name="Hard-Hitting News"} and the latter being important for a new addition to this list: :Card{name="DreamNet"}.
-
-:Card{name="DreamNet"} further rewards you for running by giving you a card (and a credit if your ID is flipped).
-To kill even more pieces of ice, you have access to :Card{name="Hippo"}.
-With this card you can either trash the rezzed outermost piece of ice or make the Corp anxious of rezzing it.
-Either way you're happy with the result.
-Finally you have :Card{name="Stargate"}, which is a powerful card to finish out games with.
-Open up R&D with your ice destruction tools and then keep using Stargate to trash ice that you find, to make them never draw into any further ice.
-Keep in mind that Stargate _does not_ shuffle R&D!
-
-#R3
-We've arrived at the final level of this list.
-This is the Hoshiko list that `@Saan` played to 6th place at the German Nationals.
-Only two cards have changed, but the changes are impactful: one copy of :Card{name="Career Fair"} and :Card{name="Earthrise Hotel"}.
-Instead we're now playing :Card{name="Rebirth"} and :Card{name="Labor Rights"}.
-
-:Card{name="Rebirth"} is a great card in the mid to late game of Anarch and allows you to switch out your identity for another one in your faction.
-While this may sound like a whole lot of options to consider, it boils down to three (and to be honest.. more down to one).
-
-In 95% of board states, it is correct to rebirth into :Card{name="Omar Keung"}.
-If you're unsure, just pick Omar. If you're sure that you want another ID, still pick Omar.
-Omar is an enormous pressuring tool for centrals and forces the Corp to spread their ice thin, which in combination with your ice destruction strategy can be devastating.
-
-For completeness sake, here are the other two options to consider:
-:Card{name="Edward Kim"} can be good in matchups like :Card{name="Argus Security"}.
-Once you've gotten rid of all their tag punishment tools, you can run through their :Card{name="Data Raven" text="Data Ravens"} with impunity (at least if you don't need your resources that much...).
-It can also heavily disrupt combo based strategies like Spombo Asa by hitting key tools (for example :Card{name="Archived Memories"} when both :Card{name="Game Changers"} are in the bin or their :Card{name="Fully Operational"}).
-
-And finally you can also choose :Card{name="Quetzal"}, if you somehow lost access to your :Card{name="Corroder"} or there is an high strength barrier with a single subroutine.
-The other Anarch identities are almost never seen as rebirth targets.
-
-The other new addition is :Card{name="Labor Rights"}, which allows you to recycle your ice destruction tools once you run out of deck.
-This is an option for the late game against slower corps.
-::
-
-## Asa Group: Security Through Vigilance
+### Asa Group: Security Through Vigilance
 ::NrdbDecks
 ---
 :nrdb_ids: haasbioroid
@@ -329,7 +219,8 @@ Often it serves you better in HQ or on the board, because it can easily get hit 
 This deck is not only the most skill-testing deck in this iteration of Project CROW, but is certainly one of the most demanding decks in the history of the game, so I'd recommend a few games just playing on your own and assuming the runner to win on 5 agendas on turn 9 (for example because they stole the winning Vacheron on turn 5).
 ::
 
-## 419: Amoral Scammer
+## Runners
+### 419: Amoral Scammer
 ::NrdbDecks
 ---
 :nrdb_ids: crim
@@ -380,4 +271,116 @@ Your game plan is once again to deny the Corp their economy by a combination of 
 To free up slots to include the Grants, we've cut 2x :Card{name="Legwork"} and 1x :Card{name="Special Order"}.
 Keep in mind that the only multi access now comes in the form of :Card{name="The Turning Wheel"}.
 But by keeping the Corp economy in check, this should be enough to stay ahead, keep them from scoring, and in the end use Turning Wheel to access the entirety of HQ.
+::
+
+### Hayley Kaplan: Universal Scholar
+::NrdbDecks
+---
+:nrdb_ids: shaper
+---
+#R1
+This deck is the first step into the archetypical Shaper deck in the current meta.
+It uses :Card{name="Aesop's Pawnshop"} as the central econ engine piece and installs a lot of cards that are meant to stay on the board temporarily.
+In this first iteration, those temporary value-giving pieces are :Card{name="Harbinger"} and :Card{name="Rezeki"}.
+Contrary to the common misconception, Rezeki is not meant to actually stick on the board until the end of time.
+It is much more valuable as a piece in Aesop's decks, where you play multiple copies, install them early, get a 5-7 turns of value out of them, and then just sell it off to Aesop's once you actually need the memory for your other stuff.
+In the average case of 6 turns of drip economy, you got 4<span class="icon icon-credit"></span> of value and then even more out of Aesop's.
+This is at least as good as a Sure Gamble, and you'd certainly play three more of those, if you were allowed to.
+
+More nifty interactions exist with :Card{name="Harbinger"} and :Card{name="Daily Casts"}.
+Harbinger can be sold to Aesop's twice, since the first sell will not trash it, but actually turn it face down to be sold again in a future turn.
+Daily Casts can also be sold, if you sequence your start of turn triggers correctly. Let's say you start the turn with 4<span class="icon icon-credit"></span> on Daily Casts.
+You first trigger Daily Casts to get the 2<span class="icon icon-credit"></span>. Then you trigger Aesop's to sell the Daily Casts and gain a further 3<span class="icon icon-credit"></span>.
+
+Otherwise, this deck is relatively straight forward.
+Try to mulligan for Professional Contacts.
+Once you find it, install it and keep clicking on it on every instance.
+This will generate a steady flow of credits and cards that then can be sold for more credits.
+#R2
+With level 2, we introduce a new Shaper ID: :Card{name="Hayley Kaplan"}, the bread and butter of competitive Shaper play.
+While other Shaper IDs might have :Card{name="Rielle" text="fun"} :Card{name="Jesminder" text="little"} :Card{name="Akiko Nisei" text="quirks"}, Hayley provides powerful click compression for doing the things you already want to do anyways: Get your board set up.
+
+To help you doing this even more quickly, we also gain another fun tool in our arsenal: :Card{name="Simulchip"}.
+In conjunction with :Card{name="Self-modifying Code"}, this allows you to very quickly set up all of your breakers at once, e.g., on a :Card{name="Stimhack"} run.
+Because of this added utility, we also change our sentry breaker to :Card{name="Ika"}.
+Once hosted on a sentry, this little breaker is very efficient, costed at 0<span class="icon icon-credit"></span> and with cheap abilities.
+Be careful though, as the Corp might overinstall their sentry to get rid of your squid friend.
+You should immediately use Simulchip here to get it back quickly.
+
+Finally, we now have a single copy of a silver bullet against fast advance decks: :Card{name="Clot"}.
+This little program can be used to stop the Corp from winning the game right under your nose.
+Use it together with a combination of :Card{name="Self-modifying Code"}, :Card{name="Simulchip"} and your :Card{name="Hayley Kaplan" text="ID ability"} to get it out at instant speed from stack, heap, or grip respectively, once the Corp has installed and advanced an agenda on the board.
+#R3
+We're finally there: This is `@Heinzel`'s "boring" Hayley deck that placed third at German Nats.
+The main body of the list does not change much, it just gets a lot more tools geared towards efficiency.
+
+Let's start with the resources, where we now include the :Card{name="Artist Colony"} + :Card{name="Fan Site"} engine, which allows you to fetch whatever card you're missing at instant speed.
+And if you don't actually need those Fan Sites, you can also just sell them off to :Card{name="Aesop's Pawnshop"}.
+
+Your scoring plan has changed quite a bit.
+Gone are the :Card{name="R&D Interface"}, which were replaced by :Card{name="Stargate"}, a powerful R&D pressuring tool released in Downfall.
+Once you're set up, you can use Stargate to dig for agendas and/or keep trashing ICE to keep R&D open for longer.
+And once you find an agenda, you now have :Card{name="Freedom Through Equality" fullname=true} to cash in an additional point if needed, when you grab it from archives.
+
+As a tool against the grindier matchups (like :Card{name="Jinteki: Personal Evolution"}, which I did not include in this series), you have got :Card{name="Buffer Drive"}.
+And finally you now have got :Card{name="Misdirection"}, which helps a lot against :Card{name="Hard-Hitting News"}.
+Once it is on the table, the maths around HHN change a lot to your favor.
+::
+
+### Hoshiko Shiro: Untold Protagonist
+::NrdbDecks
+---
+:nrdb_ids: anarch
+---
+#R1
+This is the first step towards the archetypical ice destruction deck.
+You are probably already familiar with the basic framework of breakers from the System Core 2019 setting.
+Additionally, you're getting :Card{name="Chisel"} and :Card{name="Devil Charm"}, which in combination allow you to blow up ice on approach, so you don't even need to encounter and break it at all.
+You need to balance preemptively installing Chisel as a pseudo bypass with running into ice with your face and making them pay the rez cost, just for you to then install Chisel on it and blow it up on your next approach.
+To have more flexible access to your Chisels, you have :Card{name="Simulchip"}, which allows you to fetch a Chisel at instant speed.
+You can actually do this in reaction to the corp rezzing a piece of ice.
+
+The other addition to the card pool are :Card{name="Paladin Poemu"} and :Card{name="Keiko"}, which are from the group of companions introduced in NISEIs Ashes cycle.
+While Keiko gives you the memory needed for installing your Chisels and :Card{name="Datasucker" text="Datasuckers"}, it also provides additional value together with Poemu to install all of your other things.
+
+#R2
+We're furthering our plan of getting rid of every piece of ice we can find with a lot of new cards.
+Let's start with our ID: :Card{name="Hoshiko Shiro"}.
+This is one of NISEIs new flip IDs with two sides.
+You start on the sad side and flip your ID, once you accessed a card in your turn.
+The other side will draw you a card in exchange for a credit (good thing you got two for flipping it), as long as you keep accessing cards in your turns.
+The best course of action often is to keep flipping your ID every turn, so that you get the maximum value out of both sides of your ID.
+Also keep in mind that the reverse side of your ID not only has different text, but also 1 link and the subtype **digital**, the former being important against cards like :Card{name="Hard-Hitting News"} and the latter being important for a new addition to this list: :Card{name="DreamNet"}.
+
+:Card{name="DreamNet"} further rewards you for running by giving you a card (and a credit if your ID is flipped).
+To kill even more pieces of ice, you have access to :Card{name="Hippo"}.
+With this card you can either trash the rezzed outermost piece of ice or make the Corp anxious of rezzing it.
+Either way you're happy with the result.
+Finally you have :Card{name="Stargate"}, which is a powerful card to finish out games with.
+Open up R&D with your ice destruction tools and then keep using Stargate to trash ice that you find, to make them never draw into any further ice.
+Keep in mind that Stargate _does not_ shuffle R&D!
+
+#R3
+We've arrived at the final level of this list.
+This is the Hoshiko list that `@Saan` played to 6th place at the German Nationals.
+Only two cards have changed, but the changes are impactful: one copy of :Card{name="Career Fair"} and :Card{name="Earthrise Hotel"}.
+Instead we're now playing :Card{name="Rebirth"} and :Card{name="Labor Rights"}.
+
+:Card{name="Rebirth"} is a great card in the mid to late game of Anarch and allows you to switch out your identity for another one in your faction.
+While this may sound like a whole lot of options to consider, it boils down to three (and to be honest.. more down to one).
+
+In 95% of board states, it is correct to rebirth into :Card{name="Omar Keung"}.
+If you're unsure, just pick Omar. If you're sure that you want another ID, still pick Omar.
+Omar is an enormous pressuring tool for centrals and forces the Corp to spread their ice thin, which in combination with your ice destruction strategy can be devastating.
+
+For completeness sake, here are the other two options to consider:
+:Card{name="Edward Kim"} can be good in matchups like :Card{name="Argus Security"}.
+Once you've gotten rid of all their tag punishment tools, you can run through their :Card{name="Data Raven" text="Data Ravens"} with impunity (at least if you don't need your resources that much...).
+It can also heavily disrupt combo based strategies like Spombo Asa by hitting key tools (for example :Card{name="Archived Memories"} when both :Card{name="Game Changers"} are in the bin or their :Card{name="Fully Operational"}).
+
+And finally you can also choose :Card{name="Quetzal"}, if you somehow lost access to your :Card{name="Corroder"} or there is an high strength barrier with a single subroutine.
+The other Anarch identities are almost never seen as rebirth targets.
+
+The other new addition is :Card{name="Labor Rights"}, which allows you to recycle your ice destruction tools once you run out of deck.
+This is an option for the late game against slower corps.
 ::
