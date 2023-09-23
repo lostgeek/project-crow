@@ -4,13 +4,13 @@ html,body, #__nuxt, #__layout{
 }
 
 html,body, #__nuxt, #__layout, .text-body-1, .text-body-2 {  
-  font-family: 'Play', monospace;
+  font-family: 'Play', monospace !important;
   font-weight: 400 !important;
 }
 
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Josefin Sans', sans-serif !important;
 
   &:not(:first-child) {
     margin-top: 1rem;

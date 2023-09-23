@@ -116,7 +116,6 @@ function parseDecklist(list) {
             if(c.card.keywords) {
                 subtypes = c.card.keywords.split(' - ');
             } else {
-                console.log("Error", c.card);
                 subtypes = [];
             }
             var matches = ['Barrier', 'Code Gate', 'Sentry'].filter(v => subtypes.includes(v));
@@ -131,7 +130,6 @@ function parseDecklist(list) {
             if(c.card.keywords) {
                 subtypes = c.card.keywords.split(' - ');
             } else {
-                console.log("Error2", c.card);
                 subtypes = [];
             }
             if(subtypes.length > 0 && subtypes[0] === 'Icebreaker') {
