@@ -9,7 +9,6 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@invictus.codes/nuxt-vuetify": "^0.3.0",
     "@nuxt/content": "^2.8.1",
     "@nuxt/devtools": "latest",
     "nuxt": "^3.7.0",
@@ -22,6 +21,8 @@
     "@vueuse/core": "^10.4.1",
     "@vueuse/integrations": "^10.4.1",
     "@vueuse/nuxt": "^10.4.1",
-    "fuse.js": "^6.6.2"
+    "fuse.js": "^6.6.2",
+    "list": "^2.0.19",
+    "vite-plugin-vuetify": "^1.0.2"
   }
 }

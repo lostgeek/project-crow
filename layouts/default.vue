@@ -10,7 +10,7 @@
         <v-app-bar-nav-icon
           class="hidden-md-and-up"
           @click.stop="drawer = !drawer" />
-        <div class="text-h5 d-flex flex-row" style="cursor: pointer" @click="$router.push('/')">
+        <div class="text-h5 d-flex flex-row align-center siteName" style="cursor: pointer" @click="$router.push('/')">
           <v-img src="/crow.svg" class="logo">
             <template #sources>
               <source srcset="/crow-dark.png" />
@@ -143,6 +143,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.siteName {
+  font-family: 'Josefin Sans', monospace !important;
+  font-size: 180% !important;
+}
 .logo {
   width: 2.5rem;
   margin-right: 1rem;

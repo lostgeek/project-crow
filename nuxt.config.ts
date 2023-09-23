@@ -1,82 +1,37 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
-import colors from 'vuetify/lib/util/colors'
-import { aliases, mdi } from 'vuetify/iconsets/mdi'
+import vuetify from 'vite-plugin-vuetify';
 
 export default defineNuxtConfig({
     devtools: { enabled: false },
     modules: [
-        '@nuxt/content',
-        '@invictus.codes/nuxt-vuetify',
         '@vueuse/nuxt',
+        '@nuxt/content',
+        async (options, nuxt) => {
+            nuxt.hooks.hook("vite:extendConfig", (config) =>
+                // @ts-ignore
+                config.plugins.push(vuetify())
+            );
+        },
         ['@nuxtjs/google-fonts', {
             families: {
                 'Josefin+Sans': true,
-                Lato: true,
+                'Play': true,
             },
             preload: true,
         }],
     ],
-    vuetify: {
-        vuetifyOptions: {
-            display: {
-                mobileBreakpoint: 'sm',
-            },
-            icons: {
-                defaultSet: 'mdi',
-                aliases,
-                sets: {
-                    mdi,
-                },
-            },
-            theme: {
-                defaultTheme: 'dark',
-                themes: {
-                    light: {
-                        dark: false,
-                        colors: {
-                            primary: colors.amber.darken2,
-                            primarytext: colors.amber.darken3,
-                            secondary: colors.blueGrey.darken2,
-                            secondarytext: colors.blueGrey.darken3,
-                            secondarybg: colors.blueGrey.lighten5,
-                            link: colors.amber.base,
-                        },
-                    },
-                    dark: {
-                        dark: true,
-                        colors: {
-                            primary: colors.amber.lighten1,
-                            primarytext: colors.amber.lighten1,
-                            secondary: colors.blueGrey.lighten1,
-                            secondarytext: colors.blueGrey.lighten2,
-                            secondarybg: colors.blueGrey.darken4,
-                            link: colors.amber.darken2,
-                            background: '#212121',
-                        },
-                    },
-                },
-            },
-        },
-
-        moduleOptions: {
-            /* nuxt-vuetify module options */
-            treeshaking: true,
-            useIconCDN: false,
-
-            /* vite-plugin-vuetify options */
-            styles: 'sass',
-            autoImport: true,
-            useVuetifyLabs: true,
-        }
+    css: [
+        // SCSS file in the project
+        "vuetify/styles",
+        "~/assets/style/main.scss",
+        '@mdi/font/css/materialdesignicons.css',
+    ],
+    build: {
+        transpile: ["vuetify"],
     },
     content: {
         documentDriven: true,
         contentHead: false,
     },
-    css: [
-        // SCSS file in the project
-        "~/assets/style/main.scss",
-        '@mdi/font/css/materialdesignicons.css',
-    ],
 })

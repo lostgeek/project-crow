@@ -1,9 +1,13 @@
 html,body, #__nuxt, #__layout{
   height:100%!important;
   width: 100%!important;
-  
-  font-family: 'Lato', sans-serif;
 }
+
+html,body, #__nuxt, #__layout, .text-body-1, .text-body-2 {  
+  font-family: 'Play', monospace;
+  font-weight: 400 !important;
+}
+
 
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Josefin Sans', sans-serif;
@@ -26,8 +30,12 @@ ul,ol {
 
 a {
   color: rgb(var(--v-theme-link));
-  font-weight: 600;
+  font-weight: 700;
   text-decoration: none;
+  
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 blockquote {
