@@ -2,7 +2,7 @@
     <NuxtLink
         v-if="!isCard(href)"
         :href="href"
-        :target="target"
+        :target="(target) ? target : (externalLink(href) ? '_blank' : '_self')"
         :rel="rel"
         >
         <slot />
