@@ -1,6 +1,8 @@
-# Nuxt 3 Minimal Starter
+# Website for Project CROW
+Welcome to Project CROW, a series of mini-campaigns for Netrunner aiming to provide an introductory experience for beginners, who have played [System Gateway](https://nullsignal.games/products/system-gateway/) and [System Update 2021](https://nullsignal.games/products/system-update-2021/) by [Null Signal Games](https://nullsignal.games/).
+They consist of a number of duel decks starting at the initial card pool of System Gateway and System Update 2021, sometimes adding in a few key cards from the larger Standard card pool, and then advancing over multiple stages to finally end at top-level competitive Standard decks played at current tournaments of its time.
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+The website can be found [here](https://crow.lostgeek.de/)!
 
 ## Setup
 
@@ -34,30 +36,8 @@ yarn dev
 
 ## Production
 
-Build the application for production:
+Generate the static pages:
 
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
+npx nuxi generate
 ```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
