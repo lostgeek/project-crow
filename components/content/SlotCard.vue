@@ -5,6 +5,7 @@
         :width="smAndUp ? '600' : '100%'"
         :scrim="false">
         <v-card
+            elevation="8"
             class="w-100"
             color="secondary">
             <v-progress-circular
@@ -34,6 +35,16 @@
                         :src="imageUrl" />
                 </v-col>
             </v-row>
+            <v-card-actions color="primary" class="pt-0">
+                <v-btn
+                    color="primary"
+                    variant="flat"
+                    target="_blank"
+                    href="https://netrunnerdb.com"
+                >
+                Go to NetrunnerDB
+                </v-btn>
+            </v-card-actions>
         </v-card>
     </v-overlay>
     </a>
@@ -67,7 +78,8 @@ const imageUrl = computed(function() {
 
 <style lang="scss">
 .nrdbCard {
-    color: rgb(var(--v-theme-secondarytext));
+    color: rgb(var(--v-theme-link));
+    font-weight:800;
     cursor: pointer;
 }
 </style>

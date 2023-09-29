@@ -11,11 +11,11 @@ export default defineNuxtPlugin((app) => {
                 dark: false,
                 colors: {
                     primary: colors.amber.darken2,
-                    primarytext: colors.amber.darken3,
+                    primarytext: colors.amber.darken4,
                     secondary: colors.blueGrey.darken2,
                     secondarytext: colors.blueGrey.darken3,
                     secondarybg: colors.blueGrey.lighten5,
-                    link: colors.amber.base,
+                    link: colors.amber.darken4,
                 },
             },
             dark: {
