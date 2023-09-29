@@ -4,6 +4,9 @@ They consist of a number of duel decks starting at the initial card pool of Syst
 
 The website can be found [here](https://crow.lostgeek.de/)!
 
+![image](https://github.com/lostgeek/project-crow/assets/1409906/0f1440ba-7e5b-4c41-a11e-57745f72acf4)
+
+
 ## Setup
 
 Make sure to install the dependencies:
