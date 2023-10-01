@@ -40,7 +40,7 @@
                     color="primary"
                     variant="flat"
                     target="_blank"
-                    href="https://netrunnerdb.com"
+                    :href="`https://netrunnerdb.com/en/card/${card.code}`"
                 >
                 Go to NetrunnerDB
                 </v-btn>
