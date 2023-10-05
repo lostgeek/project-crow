@@ -77,14 +77,6 @@
 const props = defineProps(['nrdb_id']);
 const cards = useState('cards');
 
-const { data, pending, error, refresh } = await useAsyncData(
-  `https://netrunnerdb.com/api/2.0/public/decklist/${props.nrdb_id}`,
-  () => $fetch(`https://netrunnerdb.com/api/2.0/public/decklist/${props.nrdb_id}`)
-);
-if (error.value) {
-    console.log("Error while fetching NRDB: ", error.value)
-}
-
 function readCards(list) {
     return Object.entries(list).map( ([id, amount], _) => ({
         card: cards.value.find((el) => el.code === id),
@@ -143,19 +135,9 @@ function parseDecklist(list) {
     });
 }
 
-const decklist = computed(function() {
-    if(data.value) {
-        var cards = readCards({...data.value.data[0].cards});
-        var list = parseDecklist(cards);
-        return {
-            title: data.value.data[0].name,
-            cards: list,
-            side: cards[0].card.side_code,
-        };
-    } else {
-        return [];
-    }
-});
+const { data:decklist } = useNuxtData(props.nrdb_id);
+
+console.log("Fetched from cache:", decklist.value);
 
 const corp_types = ["agenda", "asset", "operation", "upgrade", "barrier", "code gate", "sentry", "multi", "other"];
 const runner_types = ["event", "hardware", "resource", "icebreaker", "program"];
