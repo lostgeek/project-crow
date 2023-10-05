@@ -4,6 +4,7 @@ import vuetify from 'vite-plugin-vuetify';
 
 export default defineNuxtConfig({
     devtools: { enabled: false },
+    ssr: true,
     modules: [
         '@vueuse/nuxt',
         '@nuxt/content',
