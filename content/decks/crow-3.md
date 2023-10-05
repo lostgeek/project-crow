@@ -15,7 +15,7 @@ For the third iteration of Project CROW released in March 2020, I was particular
 ### Jinteki: Replicating Perfection
 ::NrdbDecks
 ---
-:nrdb_ids: jinteki
+:decks: jinteki
 ---
 #C1
 This deck represents the asset spammy side of Netrunner. We're starting with a moderate 18 assets, to then ramp up to 24 on level 2 and 27 on level 3. Your game plan is simple: play a lot of unprotected assets that the Runner can't deal with in time to generate you forward momentum. There is [Daily Business Show](/en/card/25108) to filter your draws and prevent agenda flooding. There are [Marilyn Campaign](/en/card/25072), [Mumba Temple](/en/card/10018), [PAD Campaign](/en/card/25142), and [Sundew](/en/card/25092) for economy (the latter of which you might want to even ice). And there is [Jeeves Model Bioroids](/en/card/10067) for insane click value. It allows you to score 4/2 agendas in a single turn without advancing them in the prior turn. This allows for never-advance plays in your scoring remote, where you keep the Runner guessing on what you installed.
@@ -62,7 +62,7 @@ This allows you to do any one of the following tricks:
 ### Argus Security: Protection Guaranteed
 ::NrdbDecks
 ---
-:nrdb_ids: weyland
+:decks: weyland
 ---
 #C1
 This deck is the first step to the punishing tempo Weyland deck that is most typically played out of [Argus Security](/en/card/07001).
@@ -110,7 +110,7 @@ The Agenda suite changed only a small bit replacing the [Oaktown Renovation](/en
 ### Asa Group: Security Through Vigilance
 ::NrdbDecks
 ---
-:nrdb_ids: haasbioroid
+:decks: haasbioroid
 ---
 #C1
 In this iteration of Project CROW, I wanted to get a little bit more experimental and offer a list for more experienced players.
@@ -223,7 +223,7 @@ This deck is not only the most skill-testing deck in this iteration of Project C
 ### 419: Amoral Scammer
 ::NrdbDecks
 ---
-:nrdb_ids: crim
+:decks: crim
 ---
 #R1
 This is the first step into the archetypical [419](/en/card/21063) deck.
@@ -276,7 +276,7 @@ But by keeping the Corp economy in check, this should be enough to stay ahead, k
 ### Hayley Kaplan: Universal Scholar
 ::NrdbDecks
 ---
-:nrdb_ids: shaper
+:decks: shaper
 ---
 #R1
 This deck is the first step into the archetypical Shaper deck in the current meta.
@@ -330,7 +330,7 @@ Once it is on the table, the maths around HHN change a lot to your favor.
 ### Hoshiko Shiro: Untold Protagonist
 ::NrdbDecks
 ---
-:nrdb_ids: anarch
+:decks: anarch
 ---
 #R1
 This is the first step towards the archetypical ice destruction deck.

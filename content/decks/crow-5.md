@@ -15,7 +15,7 @@ Stage 3 are the two decks [Frog off, Keeling!](https://netrunnerdb.com/en/deckli
 
 ::NrdbDecks
 ---
-:nrdb_ids: level1
+:decks: level1
 ---
 #C1
 ### New cards
@@ -48,7 +48,7 @@ Be aware that the Corp is on a fast advance plan and the game might be over quic
 
 ::NrdbDecks
 ---
-:nrdb_ids: level2
+:decks: level2
 ---
 #C2
 ### New cards
@@ -112,7 +112,7 @@ Furthermore with the rotation of [Apocalypse](/en/card/09030), tech cards like [
 
 ::NrdbDecks
 ---
-:nrdb_ids: level3
+:decks: level3
 ---
 #C3
 

@@ -27,7 +27,7 @@ Most of the cards in this deck come from the System Core 2019 with the exception
 
 ::NrdbDecks
 ---
-:nrdb_ids: level1
+:decks: level1
 ---
 
 #C1
@@ -54,7 +54,7 @@ The last important new addition is [Excalibur](/en/card/06111), which is a piece
 
 ::NrdbDecks
 ---
-:nrdb_ids: level2
+:decks: level2
 ---
 
 #C2
@@ -79,7 +79,7 @@ Finally we've got the three pieces of ice in [DNA Tracker](/en/card/11053), [Ana
 
 ::NrdbDecks
 ---
-:nrdb_ids: level3
+:decks: level3
 ---
 
 #C3
@@ -101,6 +101,6 @@ Once again: Congratulations! You started out with decks near to the Core Experie
 
 ::NrdbDecks
 ---
-:nrdb_ids: level4
+:decks: level4
 ---
 :::

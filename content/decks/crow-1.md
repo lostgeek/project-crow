@@ -21,7 +21,7 @@ Another new card is [Rashida Jaheem](/en/card/21080), which is a good tempo card
 
 ::NrdbDecks
 ---
-:nrdb_ids: level1
+:decks: level1
 ---
 
 #C1
@@ -56,7 +56,7 @@ Besides these defensive options, they also have [Calibration Testing](/en/card/2
 
 ::NrdbDecks
 ---
-:nrdb_ids: level2
+:decks: level2
 ---
 
 #C2
@@ -87,7 +87,7 @@ To combat this, the Corp includes [IP Block](/en/card/11094), which normally is 
 
 ::NrdbDecks
 ---
-:nrdb_ids: level3
+:decks: level3
 ---
 
 #C3
@@ -118,7 +118,7 @@ Congratulations! You've reached the current meta for this specific matchup. I ho
 
 ::NrdbDecks
 ---
-:nrdb_ids: level4
+:decks: level4
 ---
 
 #R4

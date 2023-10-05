@@ -11,7 +11,7 @@ This is part of the fourth iteration of the Project CROW mini-campaign for begin
 ## Stage 1
 ::NrdbDecks
 ---
-:nrdb_ids: level1
+:decks: level1
 ---
 #C1
 With this [Precision Design](/en/card/30035) list, your game plan is very straight forward: Score your Agendas and do so quickly! The card enabling all of this is [Seamless Launch](/en/card/30040). Install a 4/2 agenda in a well-defended server. use Seamless Launch to score it and grab back the Launch you just used to be ready to score the next one.
@@ -29,7 +29,7 @@ Use [Botulus](/en/card/30004) as a tool for early game aggression together with 
 ## Stage 2
 ::NrdbDecks
 ---
-:nrdb_ids: level2
+:decks: level2
 ---
 #C2
 We've sped up even more. With [Cyberdex Sandbox](/en/card/26128), all of our 2-pointer agendas are now tempo-positive. Sandbox additionally helps you deal with the flood of virusses that the chosen Runner for this matchup will be bringing.
@@ -56,7 +56,7 @@ Also note that while Wildcat Strike has the option of drawing your cards, in alm
 ## Stage 3
 ::NrdbDecks
 ---
-:nrdb_ids: level3
+:decks: level3
 ---
 #C3
 Finally we arrive at [Seamless Rush](https://netrunnerdb.com/en/decklist/64839/seamless-rush-1rst-7th-10th-at-early-bird-9-0-) which some of team NWE brought to the first big tournament of the Gateway meta. We're now using the most powerful draw tools available in the Standard card pool in [Rashida Jaheem](/en/card/21080) and [Violet Level Clearance](/en/card/11111). With these, you will very quickly find everything you're looking for. 

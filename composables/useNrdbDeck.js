@@ -1,4 +1,5 @@
-export const useNrdbDeck = (nrdb_id) => {
+export const useNrdbDeck = (maybeRefOrGetter) => {
+    const nrdb_id = toValue(maybeRefOrGetter);
     const cards = useState('cards');
 
     function readCards(list) {

@@ -4,7 +4,7 @@
         color="primary"
         align-tabs="left"
         >
-        <v-tab v-for="deck in nrdb_ids" :key="deck.id" :value="deck.id">
+        <v-tab v-for="deck in decks" :key="deck.id" :value="deck.id">
             {{deck.title}}
         </v-tab>
     </v-tabs>
@@ -13,7 +13,7 @@
         v-model="tab">
         <v-window-item
             color="primary"
-            v-for="deck in nrdb_ids"
+            v-for="deck in decks"
             :key="deck.id"
             :value="deck.id">
             <NrdbDeck :nrdb_id="deck.nrdb_id">
@@ -29,11 +29,12 @@
 import { useDisplay } from 'vuetify'
 
 const { smAndUp } = useDisplay();
-const props = defineProps(['nrdb_ids']);
+const props = defineProps(['decks']);
 
 const tab = ref(null);
 
-const decks = props.nrdb_ids
+// Preload decks to ensure correct prerendering
+const loading = props.decks
     .map(({nrdb_id}) => nrdb_id)
     .forEach((nrdb_id) => useNrdbDeck(nrdb_id));
 </script>
