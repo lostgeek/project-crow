@@ -60,16 +60,13 @@ export const useNrdbDeck = (maybeRefOrGetter) => {
         });
     }
 
-    const { data:cachedData } = useNuxtData(nrdb_id);
-    if (cachedData.value) {
-        return cachedData;
-    } else {
-        const data = ref(null);
-        
+    const { data } = useNuxtData(nrdb_id);
+    if (!data.value) {
         const execute = async() => {
-            const {data: fetchedData} = await useFetch(
+            await useFetch(
                 `https://netrunnerdb.com/api/2.0/public/decklist/${nrdb_id}`, {
                     key: nrdb_id,
+                    watch: false,
                     server: true,
                     transform: ({data}) => {
                         var cards = readCards({...data[0].cards});
@@ -82,11 +79,8 @@ export const useNrdbDeck = (maybeRefOrGetter) => {
                     },
                     default: () => null,
                 });
-            data.value = fetchedData.value;
         };
-
         execute();
-
-        return data;
     }
+    return data;
 }
