@@ -10,9 +10,9 @@ export default defineNuxtConfig({
         '@nuxt/content',
         async (options, nuxt) => {
             nuxt.hooks.hook("vite:extendConfig", (config) =>
-                // @ts-ignore
-                config.plugins.push(vuetify())
-            );
+                            // @ts-ignore
+                            config.plugins.push(vuetify())
+                           );
         },
         ['@nuxtjs/google-fonts', {
             families: {
@@ -22,6 +22,17 @@ export default defineNuxtConfig({
             preload: true,
         }],
     ],
+    app: {
+        head: {
+            script: [
+                {
+                    src: "https://plausible.lostgeek.de/js/script.js",
+                    defer: true,
+                    'data-domain': "crow.lostgeek.de",
+                },
+            ],
+        },
+    },
     css: [
         // SCSS file in the project
         "vuetify/styles",
